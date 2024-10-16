@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --color-bg: rgb(84, 71, 63);
+    --color-section : rgb(154, 126, 111);
+    --color-border: rgb(203, 210, 164);
+    --color-text: rgb(233, 238, 217);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: linear-gradient(to right, var(--color-bg) 30%, rgba(84, 71, 63, .7)), url("/img/bg-img.jpg");
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.container h1{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+.container form{
+    max-width: 400px;
+    padding: 2rem;
+    background: var(--color-section);
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0,.2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.container form label{
+    font-size: 2.5rem;
+}
+
+.container form input{
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    width: 60%;
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin-bottom: 3rem;
+}
+
+.container form button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.7rem;
+    background-color: var(--color-border);
+    color: var(--color-bg);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.container form button:hover{
+    background-color: var(--color-bg);
+    color: var(--color-border);
+}
+
+#output{
+    margin-top: 2rem;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--color-section);
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 5px;
+    height: 75px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0,.2);
+    line-height: 75px;
+    letter-spacing: 2px;
+}
